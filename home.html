@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <title>ChocoTabe</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="ChocoTabe's Music Site" />
+    <meta name="keywords" content="음악, 자작곡, Music" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0097b7" />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-0LKF6ET149"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-0LKF6ET149");
+    </script>
+    <link rel="apple-touch-icon" href="image/chocotabe.webp" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script defer="true" async="false">
+      $(() => {
+        fetch("get_css.html").then(function (response) {
+          response.text().then(function (text) {
+            $("head").append(text);
+          });
+        });
+      });
+    </script>
+    <script src="fetch_func.js" defer="true" async="false"></script>
+    <script src="bg_animation.js" defer="true" async="false"></script>
+    <script defer="true" async="false">
+      $(() => {
+        getMainText();
+      });
+      window.onpageshow = function (event) {
+        if (
+          event.persisted ||
+          (window.performance && window.performance.navigation.type == 2)
+        ) {
+          getMainText();
+        }
+      };
+      function getMainText() {
+        introduceMyself();
+        setTimeout(function () {
+          $("#about").text("ABOUT");
+          $("#aside>a:nth-child(1)>div").text("INTRODUCE MYSELF");
+          $("#aside>a:nth-child(2)>div").text("ABOUT MY MUSIC");
+          $("#play-now>span").text("PLAY NOW");
+        }, 300);
+      }
+      function introduceMyself() {
+        fetch("about/introduce_myself.html").then(function (response) {
+          response.text().then(function (text) {
+            document.getElementById("description").innerHTML = text;
+            reloadFooterTop();
+          });
+        });
+      }
+    </script>
+    <script src="fetch_load_simentic.js" defer="true" async="false"></script>
+  </head>
+
+  <body onresize="reloadFooterTop()">
+    <nav></nav>
+    <div id="nav-line"></div>
+    <div id="img-group">
+      <img
+        id="bg1"
+        src="thumbnail/043 22 Sep 2021ChocoTabe - Lost Way,.webp"
+        alt="Background"
+      />
+      <img
+        id="bg2"
+        src="thumbnail/042 01 Sep 2021ChocoTabe - For You,.webp"
+        alt="Background"
+      />
+      <img
+        id="bg3"
+        src="thumbnail/041 17 Jun 2021ChocoTabe - Like a Star,.webp"
+        alt="Background"
+      />
+      <img
+        id="bg4"
+        src="thumbnail/040 03 Jun 2021ChocoTabe - Regret,.webp"
+        alt="Background"
+      />
+    </div>
+    <div id="black-opacity"></div>
+    <div id="nav-bg"></div>
+    <div id="main-box"></div>
+    <div id="main-music-title"></div>
+    <div id="main-artist"></div>
+    <div id="main-description"></div>
+    <a id="play-now-button" href="#">
+      <div id="play-now"><span></span></div>
+    </a>
+    <div id="page"></div>
+    <div id="about-line-1"></div>
+    <a href="#about">
+      <div id="about"></div>
+    </a>
+    <div id="about-line-2"></div>
+    <div id="main-section">
+      <iframe
+        title="Conetent Factory"
+        src="https://www.youtube-nocookie.com/embed/x7Q4QaYgF_4"
+        frameborder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+      <p id="description"></p>
+    </div>
+    <div id="aside-vLine"></div>
+    <div id="aside">
+      <a href="#about" onclick="introduceMyself()">
+        <div></div>
+      </a>
+      <a href="#about" onclick="aboutMyMusic()">
+        <div></div>
+      </a>
+    </div>
+    <footer></footer>
+  </body>
+</html>

@@ -1,0 +1,1104 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@700&display=swap");
+
+@font-face {
+  font-family: 0face;
+  src: "Noto Sans KR", sans-serif, Arial;
+  font-display: swap;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+  margin: 0;
+}
+
+body {
+  width: auto;
+  height: auto;
+  background: #0097b7 0% 0% no-repeat padding-box;
+  margin: 0;
+  min-height: 100%;
+  opacity: 1;
+  /* -webkit-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none; */
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* main page */
+
+#img-group {
+  position: absolute;
+  width: 1920px;
+  height: 1080px;
+  overflow: hidden;
+}
+
+img#bg1 {
+  position: absolute;
+  opacity: 1;
+  bottom: 150px;
+}
+
+img#bg2,
+img#bg3,
+img#bg4 {
+  position: absolute;
+  left: 1920px;
+  opacity: 1;
+  bottom: 150px;
+}
+
+div#black-opacity {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 1920px;
+  height: 1080px;
+  background: #000000 0% 0% no-repeat padding-box;
+  opacity: 0.2;
+}
+
+div#nav-bg {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 1920px;
+  height: 125px;
+  background: #0097b7 0% 0% no-repeat padding-box;
+  opacity: 0.75;
+}
+.nav {
+  position: absolute;
+  height: 40px;
+  letter-spacing: 6px;
+  font: normal normal 900 50px/54px Noto Sans KR, Arial;
+  text-align: center;
+  color: #f1ff92;
+  opacity: 1;
+  z-index: 100;
+}
+.nav#home-nav {
+  top: 60px;
+  left: 551px;
+  width: 132px;
+}
+
+.nav#music-nav {
+  top: 60px;
+  left: 883px;
+  width: 154px;
+}
+.nav#detail-nav {
+  top: 60px;
+  left: 1205px;
+  width: 196px;
+}
+
+div#nav-line {
+  position: absolute;
+  top: 125px;
+  left: 0px;
+  width: 1910px;
+  height: 0px;
+  border: 5px solid #f1ff92;
+  opacity: 1;
+  z-index: 1;
+}
+
+#main-box {
+  position: absolute;
+  top: 730px;
+  left: 0px;
+  width: 1920px;
+  height: 350px;
+  background: #f1ff92 0% 0% no-repeat padding-box;
+  opacity: 1;
+}
+
+#main-music-title {
+  position: absolute;
+  top: 800px;
+  left: 182px;
+  width: 750px;
+  height: 80px;
+  text-align: left;
+  font: normal normal 900 80px/109px Noto Sans KR, Arial;
+  letter-spacing: 0px;
+  color: #000000;
+  opacity: 1;
+}
+
+#main-artist {
+  position: absolute;
+  top: 905px;
+  left: 182px;
+  width: 750px;
+  height: 30px;
+  text-align: left;
+  font: normal normal 900 30px/41px Noto Sans KR, Arial;
+  letter-spacing: 0px;
+  color: #000000;
+  opacity: 1;
+}
+
+#main-description {
+  position: absolute;
+  top: 867px;
+  left: 1423px;
+  width: 804px;
+  height: 116px;
+  text-align: center;
+  font: normal normal 900 20px/32px Noto Sans KR, Arial;
+  color: #000000;
+  opacity: 1;
+  transform: translateX(-50%);
+}
+
+#play-now {
+  position: absolute;
+  top: 971px;
+  left: 182px;
+  width: 204px;
+  height: 40px;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  box-shadow: 3px 3px 6px #00000029;
+  opacity: 1;
+  text-align: center;
+  font: normal normal 900 24px/33px Noto Sans KR, Arial;
+
+  letter-spacing: 0px;
+  color: #000000;
+}
+
+#play-now > span {
+  position: relative;
+  width: 130px;
+  height: 24px;
+  top: 6px;
+}
+
+div#page {
+  position: absolute;
+  top: 1080px;
+  left: 386px;
+  width: 1150px;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  box-shadow: 10px 10px 0px #f1ff92;
+  opacity: 1;
+}
+
+div#about-line-1,
+div#about-line-2 {
+  position: absolute;
+  top: 1150px;
+  width: 387px;
+  height: 0px;
+  border: 5px solid #0097b7;
+  opacity: 1;
+}
+
+div#about-line-1 {
+  left: 460px;
+}
+
+div#about-line-2 {
+  left: 1073px;
+}
+
+div#about {
+  position: absolute;
+  top: 1125px;
+  left: 879px;
+  text-align: center;
+  font: normal normal 900 50px/54px Noto Sans KR, Arial;
+  letter-spacing: 0px;
+  color: #0097b7;
+  opacity: 1;
+}
+
+#main-section {
+  position: absolute;
+  width: 630px;
+  height: auto;
+  top: 1265px;
+  left: 480px;
+}
+
+div#main-section > iframe {
+  width: 630px;
+  height: 455px;
+}
+
+div#main-section > p {
+  position: absolute;
+  top: 492px;
+  margin-top: 0;
+  height: auto;
+  text-align: left;
+  font: normal normal 900 16px/32px Noto Sans KR, Arial;
+
+  letter-spacing: 0px;
+  color: #000000;
+  opacity: 1;
+}
+
+div#aside-vLine {
+  position: absolute;
+  top: 1265px;
+  left: 1151px;
+  width: 5px;
+  background-color: #0097b7;
+  height: 600px;
+  opacity: 1;
+  z-index: 200;
+}
+
+div#aside div {
+  text-align: left;
+  font: normal normal 900 20px/26px Noto Sans KR, Arial;
+
+  letter-spacing: 0px;
+  color: #000000;
+  opacity: 1;
+  line-height: 75px;
+  margin-left: 20px;
+}
+
+div#aside > a {
+  position: absolute;
+  width: 309px;
+  height: 75px;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border: 2px solid #0097b7;
+  /* border-radius         : 5px; */
+  opacity: 1;
+}
+
+div#aside > a:nth-child(1) {
+  top: 1265px;
+  left: 1151px;
+}
+
+div#aside > a:nth-child(2) {
+  top: 1342px;
+  left: 1151px;
+}
+
+footer {
+  position: absolute;
+  width: 1920px;
+  height: 50px;
+  background: #434343 0% 0% no-repeat padding-box;
+  text-align: center;
+}
+
+div#logo {
+  position: relative;
+  top: 15px;
+}
+
+img#sc {
+  position: relative;
+  bottom: 3px;
+}
+
+div#music-page,
+div#detail-page {
+  position: absolute;
+  top: 150px;
+  left: 386px;
+  width: 1150px;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  box-shadow: 10px 10px 0px #f1ff92;
+  opacity: 1;
+}
+
+div.music-object:hover {
+  background-color: rgba(0, 0, 0, 0.075);
+}
+
+span.music-date {
+  position: relative;
+  left: 220px;
+  font-size: 14px;
+}
+/* music & detail page */
+
+div#music {
+  position: absolute;
+  top: 195px;
+  left: 880px;
+  text-align: center;
+  font: normal normal 900 50px/54px Noto Sans KR, Arial;
+  letter-spacing: 0px;
+  color: #0097b7;
+  opacity: 1;
+}
+
+div#detail {
+  position: absolute;
+  top: 192px;
+  left: 875px;
+  text-align: center;
+  font: normal normal 900 50px/54px Noto Sans KR, Arial;
+  letter-spacing: 0px;
+  color: #0097b7;
+  opacity: 1;
+}
+div#music-line-1,
+div#detail-line-1 {
+  position: absolute;
+  top: 220px;
+  left: 460px;
+  width: 387px;
+  height: 5px;
+  background-color: #0097b7;
+  opacity: 1;
+}
+
+div#music-line-2,
+div#detail-line-2 {
+  position: absolute;
+  top: 220px;
+  left: 1073px;
+  width: 387px;
+  height: 5px;
+  background-color: #0097b7;
+  opacity: 1;
+}
+
+div#music-category {
+  width: auto;
+  height: auto;
+  text-align: center;
+  font: normal normal 900 19px/30px Noto Sans KR, Arial;
+
+  letter-spacing: 0px;
+  opacity: 1;
+  line-height: 40px;
+}
+
+div#music-category > a#original {
+  position: absolute;
+  top: 269px;
+  left: 480px;
+  width: 243px;
+  height: 40px;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border: 3px solid #0097b7;
+  color: #000000;
+  border-radius: 5px;
+  opacity: 1;
+  z-index: 100;
+}
+
+div#music-category-line {
+  position: absolute;
+  top: 309px;
+  left: 480px;
+  width: 961px;
+  height: 3px;
+  background-color: #0097b7;
+  opacity: 1;
+  z-index: 10000;
+}
+
+div#white-box {
+  position: absolute;
+  top: 309px;
+  left: 480px;
+  width: 965px;
+  height: 34px;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  opacity: 1;
+  z-index: 1000;
+}
+
+div#music-grid,
+div#detail-grid {
+  position: absolute;
+  top: 367px;
+  left: 468px;
+  width: 984px;
+  height: auto;
+}
+
+div.music-object,
+div.detail-object {
+  float: left;
+  padding-top: 11px;
+  padding-left: 11px;
+  padding-right: 11px;
+  padding-bottom: 11px;
+  margin-bottom: 11px;
+}
+
+div.music-caption > img,
+.music-artist,
+.detail-artist {
+  float: left;
+}
+
+div.music-caption,
+div.detail-caption {
+  margin-top: 8px;
+  width: 306px;
+  text-align: left;
+  letter-spacing: 0px;
+  color: #000000;
+  opacity: 1;
+}
+
+div.music-caption > img {
+  margin-right: 6px;
+  width: 35px;
+  height: 35px;
+}
+
+div.music-artist,
+div.detail-artist {
+  width: 68px;
+  height: 12px;
+  font: normal normal 900 12px/32px Noto Sans KR, Arial;
+
+  line-height: 16px;
+}
+
+div.music-title,
+div.detail-title {
+  width: 285px;
+  height: 16px;
+  font: normal normal 900 20px/32px Noto Sans KR, Arial;
+
+  line-height: 12px;
+}
+
+div#img-count,
+div#img-name {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 0;
+}
+div.detail-object:hover {
+  background-color: rgba(0, 0, 0, 0.075);
+}
+
+/*Play Page*/
+div#black-background {
+  position: absolute;
+  width: 1920px;
+  height: 1080px;
+  background-color: #000000;
+  z-index: 0;
+}
+
+div#black-opacity-play {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 1920px;
+  height: 1080px;
+  background: #000000 0% 0% no-repeat padding-box;
+  opacity: 0.75;
+}
+
+img#bg {
+  position: absolute;
+  width: 1920px;
+  height: 1080px;
+}
+
+.play-nav {
+  text-align: center;
+  font: normal normal 900 24px/50px Noto Sans KR, Arial;
+
+  letter-spacing: 0px;
+  color: #ffffff;
+  opacity: 1;
+  z-index: 10;
+}
+
+#play-home {
+  position: absolute;
+  top: 879px;
+  left: 61px;
+  width: 68px;
+  height: 24px;
+}
+
+#play-music {
+  position: absolute;
+  top: 879px;
+  left: 180px;
+  width: 78px;
+  height: 24px;
+}
+
+#play-detail {
+  position: absolute;
+  top: 879px;
+  left: 308px;
+  width: 100px;
+  height: 24px;
+}
+
+#pre {
+  position: absolute;
+  top: 1022px;
+  left: 1004px;
+}
+
+#next {
+  position: absolute;
+  top: 1022px;
+  left: 900px;
+}
+
+#pre-music,
+#next-music {
+  width: auto;
+  height: auto;
+  font: normal normal 900 16px/32px Noto Sans KR, Arial;
+
+  letter-spacing: 0px;
+  color: #ffffff;
+  opacity: 1;
+  line-height: 16px;
+}
+
+#pre-music {
+  position: absolute;
+  top: 1029px;
+  left: 1041px;
+}
+
+#next-music {
+  position: absolute;
+  top: 1029px;
+  left: 877px;
+  transform: translateX(-100%);
+}
+
+audio {
+  position: absolute;
+  top: 940px;
+  left: 61px;
+  width: 1796px;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border-radius: 40px;
+  opacity: 0.76;
+}
+
+#music-title-play {
+  position: absolute;
+  display: none;
+  top: 90px;
+  left: 61px;
+  width: auto;
+  height: 80px;
+  text-align: left;
+  font: normal normal 900 80px/109px Noto Sans KR, Arial;
+
+  letter-spacing: 0px;
+  color: #ffffff;
+  opacity: 1;
+}
+
+#music-artist-play {
+  position: absolute;
+  display: none;
+  top: 195px;
+  left: 61px;
+  width: auto;
+  height: 30px;
+  text-align: left;
+  font: normal normal 900 30px/41px Noto Sans KR, Arial;
+
+  letter-spacing: 0px;
+  color: #ffffff;
+  opacity: 1;
+}
+
+#music-date-play {
+  position: absolute;
+  display: none;
+  top: 230px;
+  left: 61px;
+  width: auto;
+  height: 30px;
+  text-align: left;
+  font: normal normal 900 20px/41px Noto Sans KR, Arial;
+
+  letter-spacing: 0px;
+  color: #ffffff;
+  opacity: 1;
+}
+
+/*Detail page*/
+
+.detail-nav {
+  position: absolute;
+  height: 40px;
+  letter-spacing: 6px;
+  font: normal normal 900 50px/54px Noto Sans KR, Arial;
+  text-align: center;
+  color: #f1ff92;
+  opacity: 1;
+  z-index: 100;
+}
+#detail-home {
+  top: 60px;
+  left: 551px;
+  width: 132px;
+}
+
+#detail-music {
+  top: 60px;
+  left: 883px;
+  width: 154px;
+}
+#detail-detail {
+  top: 60px;
+  left: 1205px;
+  width: 196px;
+}
+
+#main-section-detail > #description-detail {
+  position: absolute;
+  top: 200px;
+  left: 480px;
+  width: 965px;
+  height: auto;
+  text-align: left;
+  font: normal normal 900 16px/32px Noto Sans KR, Arial;
+
+  letter-spacing: 0px;
+  color: #000000;
+  opacity: 1;
+}
+
+img.section-img {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+@media (max-width: 960px) {
+  #img-group {
+    width: 960px;
+    height: 540px;
+  }
+
+  img#bg2,
+  img#bg3,
+  img#bg4 {
+    left: 960px;
+  }
+
+  img#bg1,
+  img#bg2,
+  img#bg3,
+  img#bg4 {
+    width: 960px;
+    height: 540px;
+    bottom: 75px;
+  }
+
+  div#black-opacity {
+    width: 960px;
+    height: 540px;
+  }
+
+  div#nav-bg {
+    width: 960px;
+    height: 62.5px;
+  }
+
+  .nav {
+    height: 20px;
+    letter-spacing: 3px;
+    font: normal normal 900 25px/27px Noto Sans KR, Arial;
+  }
+
+  .nav#home-nav {
+    top: 30px;
+    left: 275.5px;
+    width: 66px;
+  }
+
+  .nav#music-nav {
+    top: 30px;
+    left: 441.5px;
+    width: 77px;
+  }
+  .nav#detail-nav {
+    top: 30px;
+    left: 602.5px;
+    width: 98px;
+  }
+
+  div#nav-line {
+    top: 62.5px;
+    width: 955px;
+    border: 2.5px solid #f1ff92;
+    background-color: #f1ff92;
+  }
+
+  #main-box {
+    top: 365px;
+    width: 960px;
+    height: 175px;
+  }
+
+  #main-music-title {
+    top: 400px;
+    left: 91px;
+    width: 375px;
+    height: 40px;
+    font: normal normal 900 40px/54.5px Noto Sans KR, Arial;
+  }
+
+  #main-artist {
+    top: 452.5px;
+    left: 91px;
+    width: 375px;
+    height: 15px;
+    font: normal normal 900 15px/20.5px Noto Sans KR, Arial;
+  }
+
+  #main-description {
+    top: 433.5px;
+    left: 711.5px;
+    width: 402px;
+    height: 58px;
+    font: normal normal 900 10px/16px Noto Sans KR, Arial;
+  }
+
+  #play-now {
+    top: 485.5px;
+    left: 91px;
+    width: 102px;
+    height: 20px;
+    box-shadow: 1.5px 1.5px 3px #00000029;
+    font: normal normal 900 12px/16.5px Noto Sans KR, Arial;
+  }
+
+  #play-now > span {
+    width: 75px;
+    height: 12px;
+    top: 3px;
+  }
+
+  div#page {
+    top: 540px;
+    left: 96.5px;
+    width: 768px;
+    height: 540px;
+    box-shadow: 5px 5px 0px #f1ff92;
+  }
+
+  div#about-line-1,
+  div#about-line-2 {
+    top: 575px;
+    width: 290px;
+    border: 2.5px solid #0097b7;
+    background-color: #0097b7;
+  }
+
+  div#about-line-1 {
+    left: 133.5px;
+  }
+
+  div#about-line-2 {
+    left: 536.5px;
+  }
+
+  div#about {
+    top: 562.5px;
+    left: 439.5px;
+    font: normal normal 900 25px/27px Noto Sans KR, Arial;
+  }
+
+  #main-section {
+    width: 411.5px;
+    top: 632.5px;
+    left: 143.5px;
+  }
+
+  div#main-section > iframe {
+    width: 411.5px;
+    height: 324px;
+  }
+
+  div#main-section > p {
+    top: 342.5px;
+    font: normal normal 900 12px/19.2px Noto Sans KR, Arial;
+  }
+
+  div#aside-vLine {
+    top: 632.5px;
+    left: 575.5px;
+    width: 3px;
+    height: 300px;
+  }
+
+  div#aside div {
+    font: normal normal 900 10px/13px Noto Sans KR, Arial;
+    line-height: 37.5px;
+    margin-left: 10px;
+  }
+
+  div#aside > a {
+    width: 251px;
+    height: 37.5px;
+    border: 1px solid #0097b7;
+  }
+
+  div#aside > a:nth-child(1) {
+    top: 632.5px;
+    left: 575.5px;
+  }
+
+  div#aside > a:nth-child(2) {
+    top: 671px;
+    left: 575.5px;
+  }
+
+  footer {
+    width: 960px;
+  }
+
+  div#music-page,
+  div#detail-page {
+    top: 75px;
+    left: 96.5px;
+    width: 768px;
+    box-shadow: 5px 5px 0px #f1ff92;
+  }
+
+  div#music {
+    top: 97.5px;
+    left: 440px;
+    font: normal normal 900 25px/27px Noto Sans KR, Arial;
+  }
+
+  div#detail {
+    top: 97.5px;
+    left: 437.5px;
+    font: normal normal 900 25px/27px Noto Sans KR, Arial;
+  }
+
+  div#music-line-1,
+  div#detail-line-1 {
+    top: 110px;
+    left: 133.5px;
+    width: 290px;
+    height: 2.5px;
+  }
+
+  div#music-line-2,
+  div#detail-line-2 {
+    top: 110px;
+    left: 536.5px;
+    width: 290px;
+    height: 2.5px;
+  }
+
+  div#music-category {
+    font: normal normal 900 9.5px/15px Noto Sans KR, Arial;
+    line-height: 20px;
+  }
+
+  div#music-category > a#original {
+    top: 134.5px;
+    left: 143.5px;
+    width: 121.5px;
+    height: 20px;
+    border: 1.5px solid #0097b7;
+    border-radius: 2.5px;
+  }
+
+  div#music-category-line {
+    top: 154.5px;
+    left: 143.5px;
+    width: 673px;
+    height: 2px;
+  }
+
+  div#white-box {
+    top: 154.5px;
+    left: 143.5px;
+    width: 673px;
+    height: 17px;
+  }
+
+  div#music-grid,
+  div#detail-grid {
+    top: 183.5px;
+    left: 137.5px;
+    width: 685px;
+  }
+
+  div.music-object,
+  div.detail-object {
+    padding: 5.5px;
+    margin-bottom: 5.5px;
+    margin-left: 22px;
+  }
+
+  div.music-caption,
+  div.detail-caption {
+    margin-top: 4px;
+    width: 153px;
+  }
+
+  div.music-caption > img {
+    margin-right: 3px;
+    width: 30px;
+    height: 30px;
+  }
+
+  div.music-artist,
+  div.detail-artist {
+    width: 34px;
+    height: 6px;
+    font: normal normal 900 6px/16px Noto Sans KR, Arial;
+    line-height: 8px;
+  }
+
+  div.music-title,
+  div.detail-title {
+    height: 8px;
+    font: normal normal 900 15px/24px Noto Sans KR, Arial;
+    line-height: 6px;
+  }
+
+  span.music-date {
+    left: 194px;
+    font-size: 12px;
+  }
+
+  img#bg {
+    position: relative;
+    top: 216px;
+    /* right: 480px; */
+    width: 960px;
+    height: 540px;
+  }
+
+  .play-nav {
+    font: normal normal 900 14.4px/30px Noto Sans KR, Arial;
+  }
+
+  #play-home {
+    top: 825px;
+    left: 30.5px;
+    width: 34px;
+    height: 12px;
+  }
+
+  #play-music {
+    top: 825px;
+    left: 90px;
+    width: 39px;
+    height: 12px;
+  }
+
+  #play-detail {
+    top: 825px;
+    left: 154px;
+    width: 50px;
+    height: 12px;
+  }
+
+  #pre {
+    top: 937px;
+    left: 502px;
+  }
+
+  #next {
+    top: 937px;
+    left: 450px;
+  }
+
+  #pre-music {
+    top: 942px;
+    left: 525.5px;
+  }
+
+  #next-music {
+    top: 942px;
+    left: 438.5px;
+  }
+
+  audio {
+    top: 865px;
+    left: 30.5px;
+    width: 898px;
+    border-radius: 20px;
+  }
+
+  #music-title-play {
+    top: 45px;
+    left: 30.5px;
+    height: 40px;
+    font: normal normal 900 48px/65.4px Noto Sans KR, Arial;
+  }
+
+  #music-artist-play {
+    top: 112px;
+    left: 30.5px;
+    height: 30px;
+    font: normal normal 900 18px/24.6px Noto Sans KR, Arial;
+  }
+
+  #music-date-play {
+    top: 133px;
+    left: 30.5px;
+    height: 15px;
+    font: normal normal 900 12px/24.6px Noto Sans KR, Arial;
+  }
+
+  .detail-nav {
+    height: 20px;
+    letter-spacing: 3px;
+    font: normal normal 900 25px/27px Noto Sans KR, Arial;
+  }
+  #detail-home {
+    top: 30px;
+    left: 275.5px;
+    width: 66px;
+  }
+
+  #detail-music {
+    top: 30px;
+    left: 441.5px;
+    width: 77px;
+  }
+  #detail-detail {
+    top: 30px;
+    left: 602.5px;
+    width: 98px;
+  }
+
+  #main-section-detail > #description-detail {
+    top: 100px;
+    left: 143.5px;
+    width: 675.5px;
+    font: normal normal 900 16px/32px Noto Sans KR, Arial;
+  }
+
+  img.section-img {
+    width: 675.5px;
+    height: 379.96875px;
+  }
+}

@@ -1,0 +1,4 @@
+$(() => {
+    loadNav();
+    loadFooter();
+});
