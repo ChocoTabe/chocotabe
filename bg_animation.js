@@ -2,8 +2,8 @@ $(() => {
   const delayTime = 10000;
   const duration = 500;
   const animationTime = 500;
-  mainAnimation();
-  function mainAnimation() {
+  firstCall();
+  function firstCall() {
     $("#main-music-title, #main-artist, #main-description").fadeIn();
     $("#main-music-title").text("Lost Way");
     $("#main-artist").text("ChocoTabe");
@@ -52,7 +52,7 @@ $(() => {
         });
       }
       $("#bg2").animate({ left: 0 }, animationTime, () => {
-        secondCall();
+        thirdCall();
       });
     }, delayTime);
   }
@@ -79,7 +79,7 @@ $(() => {
         });
       }
       $("#bg3").animate({ left: 0 }, animationTime, () => {
-        thirdCall();
+        forthCall();
       });
     }, delayTime);
   }
@@ -105,7 +105,7 @@ $(() => {
         });
       }
       $("#bg4").animate({ left: 0 }, animationTime, () => {
-        forthCall();
+        firstCall();
       });
     }, delayTime);
   }
