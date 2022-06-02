@@ -57,16 +57,6 @@ img#bg4 {
   bottom: 150px;
 }
 
-div#black-opacity {
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  width: 1920px;
-  height: 1080px;
-  background: #000000 0% 0% no-repeat padding-box;
-  opacity: 0.2;
-}
-
 div#nav-bg {
   position: absolute;
   top: 0px;
@@ -711,11 +701,6 @@ img.section-img {
     width: 960px;
     height: 540px;
     bottom: 75px;
-  }
-
-  div#black-opacity {
-    width: 960px;
-    height: 540px;
   }
 
   div#nav-bg {
