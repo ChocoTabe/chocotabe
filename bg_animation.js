@@ -62,7 +62,7 @@ $(() => {
     $("#main-artist").text("ChocoTabe");
     $("#main-description").text(
       `  ChocoTabe의 43번째 자작곡. 'For You'는 '너'에게 닿기를 바라는 마음을 간절히
-  표현한 음악이다. Electronic 장르에 BPM 130으로, 적당한 템포이다. 이전 자작곡인
+  표현한 음악이다. Electronic 장르에 BPM 130으로, 일반적인 템포이다. 이전 자작곡인
   Like a Star에서 사용된 강렬한 전자기타 음이 들리는 것이
   특징이다.`
     );
