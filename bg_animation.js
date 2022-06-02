@@ -5,7 +5,7 @@ $(() => {
   firstCall();
   function firstCall() {
     $("#main-music-title, #main-artist, #main-description").fadeIn();
-    $("#main-music-title").text("Lost Way");
+    $("#main-music-title").text("Heart Fluttering");
     $("#main-artist").text("ChocoTabe");
     $("#main-description").text(
       `  ChocoTabe의 45번째 자작곡. 2022년에 만들어진 첫 곡이다. 
