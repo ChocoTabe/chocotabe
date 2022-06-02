@@ -108,4 +108,5 @@ $(() => {
         forthCall();
       });
     }, delayTime);
+  }
 });
