@@ -40,12 +40,12 @@ $(() => {
     setTimeout(() => {
       $("#main-music-title, #main-artist, #main-description").fadeOut();
       if (window.innerWidth > 960) {
-        $("#bg2").animate({ right: 1920 }, duration, () => {
-          $("#bg2").css("right", -1920);
+        $("#bg2").animate({ left: -1920 }, duration, () => {
+          $("#bg2").css("left", 1920);
         });
       } else {
-        $("#bg2").animate({ right: 960 }, duration, () => {
-          $("#bg2").css("right", -960);
+        $("#bg2").animate({ left: -960 }, duration, () => {
+          $("#bg2").css("left", 960);
         });
       }
       $("#bg3").animate({ left: 0 }, animationTime, () => {
