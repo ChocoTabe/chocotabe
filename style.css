@@ -1046,25 +1046,19 @@ img.section-img {
   }
 
   .detail-nav {
-    height: 20px;
-    letter-spacing: 3px;
-    font: normal normal 900 25px/27px Noto Sans KR, Arial;
+    top: 11px;
+    height: 10px;
+    font: normal normal normal 10px/13.5px Noto Sans KR, Arial;
   }
   #detail-home {
-    top: 30px;
-    left: 275.5px;
-    width: 66px;
+    left: 50px;
   }
 
   #detail-music {
-    top: 30px;
-    left: 441.5px;
-    width: 77px;
+    left: 97.5px;
   }
   #detail-detail {
-    top: 30px;
-    left: 602.5px;
-    width: 98px;
+    left: 147.5px;
   }
 
   #main-section-detail > #description-detail {
