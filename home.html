@@ -24,18 +24,8 @@
     </script>
     <link rel="apple-touch-icon" href="image/chocotabe.webp" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script defer="true" async="false">
-      $(() => {
-        fetch("get_css.html").then(function (response) {
-          response.text().then(function (text) {
-            $("head").append(text);
-          });
-        });
-      });
-    </script>
-    <script src="fetch_func.js" defer="true" async="false"></script>
-    <script src="bg_animation.js" defer="true" async="false"></script>
-    <script defer="true" async="false">
+    <script src="load_css.js" defer="false" async="true"></script>
+    <script>
       $(() => {
         getMainText();
       });
@@ -65,11 +55,15 @@
         });
       }
     </script>
+    <script src="fetch_func.js" defer="true" async="false"></script>
+    <script src="bg_animation.js" defer="true" async="false"></script>
     <script src="fetch_load_simentic.js" defer="false" async="true"></script>
   </head>
 
   <body onresize="reloadFooterTop()">
-       <a id="logo" href="home"><img src="image/logo.webp" alt="logo" width="40" height="40"/></a>
+    <a id="logo" href="home"
+      ><img src="image/logo.webp" alt="logo" width="40" height="40"
+    /></a>
 
     <nav></nav>
     <div id="img-group">
