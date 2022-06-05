@@ -57,6 +57,34 @@ img#bg4 {
   bottom: 150px;
 }
 
+div.bg_button {
+  position: absolute;
+  top: 765px;
+  width: 16px;
+  height: 16px;
+  background: #000000 0% 0% no-repeat padding-box;
+  opacity: 1;
+  z-index: 1;
+  border-radius: 16px;
+  cursor: pointer;
+}
+
+div#bg_button_1 {
+  left: 898px;
+}
+
+div#bg_button_2 {
+  left: 934px;
+}
+
+div#bg_button_3 {
+  left: 970px;
+}
+
+div#bg_button_4 {
+  left: 1006px;
+}
+
 div#nav-bg {
   position: absolute;
   top: 0px;
