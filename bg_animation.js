@@ -83,17 +83,35 @@ function bg1Description() {
   $("#bg_button_1").css("opacity", "1");
   $("#bg_button_2, #bg_button_3, #bg_button_4").css("opacity", "0.25");
   $("#main-music-title, #main-artist, #main-description").fadeIn();
-  $("#main-music-title").text("Heart Fluttering");
+  $("#main-music-title").text("Deeper");
   $("#main-artist").text("ChocoTabe");
-  $("#main-description").text(
-    `  ChocoTabe의 45번째 자작곡. 2022년에 만들어진 첫 곡이다. 'Heart Fluttering'은 다시 시작하면서 걱정되는 마음도 있지만 설레이는 마음을 표현한 음악이다. Electronic 장르에 BPM 118로, 일반적인 템포이다. 이 곡은 Lost Way 이후로 7개월이 지나고 나서야 만든 것으로 자작곡 발전에 있어서 의미가 있다. `
-  );
-  $("#play-now-button").attr("href", "play/HeartFluttering.html");
+  $("#main-description").text(`
+    ChocoTabe의 46번째 자작곡. 'Deeper'는 어둡고 깊지만 이것으로부터 받는
+  호기심으로인해 더 깊숙히 파고 들어가는 모습을 표현한 음악이다. Electronic
+  장르에 BPM 124로, 일반적인 템포이다. Heart Fluttering을 만들고 나서 빨리 다른
+  음악도 만들고 싶다는 생각에 Deeper가 만들어졌다.
+  `);
+  $("#play-now-button").attr("href", "play/Deeper.html");
 }
 
 function bg2Description() {
   $("#bg_button_2").css("opacity", "1");
   $("#bg_button_1, #bg_button_3, #bg_button_4").css("opacity", "0.25");
+  $("#main-music-title, #main-artist, #main-description").fadeIn();
+  $("#main-music-title").text("Heart Fluttering");
+  $("#main-artist").text("ChocoTabe");
+  $("#main-description").text(
+    `  ChocoTabe의 45번째 자작곡. 2022년에 만들어진 첫 곡이다. 
+    'Heart Fluttering'은 다시 시작하면서 걱정되는 마음도 있지만 설레이는 마음을 표현한 음악이다. 
+    Electronic 장르에 BPM 118로, 일반적인 템포이다. 
+    이 곡은 Lost Way 이후로 7개월이 지나고 나서야 만든 것으로 자작곡 발전에 있어서 의미가 있다. `
+  );
+  $("#play-now-button").attr("href", "play/HeartFluttering.html");
+}
+
+function bg3Description() {
+  $("#bg_button_3").css("opacity", "1");
+  $("#bg_button_1, #bg_button_2, #bg_button_4").css("opacity", "0.25");
   $("#main-music-title, #main-artist, #main-description").fadeIn();
   $("#main-music-title").text("Lost Way");
   $("#main-artist").text("ChocoTabe");
@@ -105,9 +123,9 @@ BPM 128로, 몽환적인 분위기를 가진 음악치고는 템포가 느리지
   $("#play-now-button").attr("href", "play/LostWay.html");
 }
 
-function bg3Description() {
-  $("#bg_button_3").css("opacity", "1");
-  $("#bg_button_1, #bg_button_2, #bg_button_4").css("opacity", "0.25");
+function bg4Description() {
+  $("#bg_button_4").css("opacity", "1");
+  $("#bg_button_1, #bg_button_2, #bg_button_3").css("opacity", "0.25");
   $("#main-music-title, #main-artist, #main-description").fadeIn();
   $("#main-music-title").text("For You");
   $("#main-artist").text("ChocoTabe");
@@ -118,20 +136,6 @@ Like a Star에서 사용된 강렬한 전자기타 음이 들리는 것이
 특징이다.`
   );
   $("#play-now-button").attr("href", "play/ForYou.html");
-}
-
-function bg4Description() {
-  $("#bg_button_4").css("opacity", "1");
-  $("#bg_button_1, #bg_button_2, #bg_button_3").css("opacity", "0.25");
-  $("#main-music-title, #main-artist, #main-description").fadeIn();
-  $("#main-music-title").text("Like a Star");
-  $("#main-artist").text("ChocoTabe");
-  $("#main-description").text(
-    `  ChocoTabe의 42번째 자작곡. 'Like a Star'는 전쟁터에서 영웅이 별처럼 나타나는
-모습을 표현한 음악이다. Electronic 장르에 BPM 134으로, 약간 빠른 템포이다.
-전자기타와 드럼이 강렬하게 들려 웅장한 느낌이 나는 것이 특징이다.`
-  );
-  $("#play-now-button").attr("href", "play/LikeaStar.html");
 }
 
 function bg1ToBg2() {
