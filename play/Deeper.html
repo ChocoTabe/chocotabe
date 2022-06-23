@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <title>Music Name</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="ChocoTabe's Music Site">
+        <meta name="keywords" content="음악, 자작곡, Music">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta name="theme-color" content="#0097b7" />
+    <link rel="apple-touch-icon" href="image/chocotabe.webp" />
+       <link rel="preload" href="../style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+       <noscript>
+            <link rel="stylesheet" href="../styles.css">
+        </noscript>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script defer="true" async="false">
+            $(() => {
+                loadPlayPageNav();
+                function loadPlayPageNav() {
+                    fetch('../play-page-nav.html').then(function (response) {
+                        response.text().then(function (text) {
+                            $('nav').append(text);
+                        });
+                    }); 
+                }
+            });
+        </script>
+        <script src="../load_music.js " defer="true" async="false"></script>
+        <script src="../play_animation.js " defer="true" async="false"></script>
+    </head>
+    <body style="overflow:hidden;">
+        <div id="black-background"></div>
+        <nav></nav>
+        <img id="bg" src="" alt="background">
+        <div id="black-opacity-play"></div>
+        <audio controls>
+        </audio>
+        <div id="music-title-play"></div>
+        <div id="music-artist-play"></div>
+        <div id="music-date-play"></div>
+        <a id="next" href="#"><img src="../image/next.webp" alt="next" width="15px" height="31px"></a>
+        <a id="pre" href="#"><img src="../image/previous.webp" alt="previous" width="15px" height="31px"></a>
+        <a id="next-music" href="#"></a>
+        <a id="pre-music" href="#"></a>
+        <div id="img-count" style="display:none;"></div>
+        <div id="img-name" style="display:none;"></div>
+    </body>
+</html>
