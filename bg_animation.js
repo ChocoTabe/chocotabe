@@ -83,20 +83,38 @@ function bg1Description() {
   $("#bg_button_1").css("opacity", "1");
   $("#bg_button_2, #bg_button_3, #bg_button_4").css("opacity", "0.25");
   $("#main-music-title, #main-artist, #main-description").fadeIn();
-  $("#main-music-title").text("Deeper");
+  $("#main-music-title").text("Walk!");
   $("#main-artist").text("ChocoTabe");
-  $("#main-description").text(`
-    ChocoTabe의 46번째 자작곡. 'Deeper'는 어둡고 깊지만 이것으로부터 받는
-  호기심으로인해 더 깊숙히 파고 들어가는 모습을 표현한 음악이다. Electronic
-  장르에 BPM 124로, 일반적인 템포이다. Heart Fluttering을 만들고 나서 빨리 다른
-  음악도 만들고 싶다는 생각에 Deeper가 만들어졌다.
-  `);
-  $("#play-now-button").attr("href", "play/Deeper.html");
+  $("#main-description").text(
+    `
+    ChocoTabe의 47번째 자작곡. 'Walk!'는 밝은 마음으로 앞으로 나아가고자 하는
+  마음을 표현한 음악이다. Electornic 장르에 BPM 120으로, 일반적인 템포이다.
+  Pulse 파형의 멜로디가 도트 게임 브금을 생각하게 만드는 것이 특징이다.
+  `
+  );
+  $("#play-now-button").attr("href", "play/Walk!.html");
 }
 
 function bg2Description() {
   $("#bg_button_2").css("opacity", "1");
   $("#bg_button_1, #bg_button_3, #bg_button_4").css("opacity", "0.25");
+  $("#main-music-title, #main-artist, #main-description").fadeIn();
+  $("#main-music-title").text("Deeper");
+  $("#main-artist").text("ChocoTabe");
+  $("#main-description").text(
+    `
+    ChocoTabe의 46번째 자작곡. 'Deeper'는 어둡고 깊은 곳에서 받는 
+    호기심으로 더 깊은 곳으로 들어가는 모습을 표현한 음악이다. Electronic
+  장르에 BPM 124로, 일반적인 템포이다. Heart Fluttering을 만들고 나서 빨리 다른
+  음악도 만들고 싶다는 생각에 Deeper가 만들어졌다.
+  `
+  );
+  $("#play-now-button").attr("href", "play/Deeper.html");
+}
+
+function bg3Description() {
+  $("#bg_button_3").css("opacity", "1");
+  $("#bg_button_1, #bg_button_2, #bg_button_4").css("opacity", "0.25");
   $("#main-music-title, #main-artist, #main-description").fadeIn();
   $("#main-music-title").text("Heart Fluttering");
   $("#main-artist").text("ChocoTabe");
@@ -109,9 +127,9 @@ function bg2Description() {
   $("#play-now-button").attr("href", "play/HeartFluttering.html");
 }
 
-function bg3Description() {
-  $("#bg_button_3").css("opacity", "1");
-  $("#bg_button_1, #bg_button_2, #bg_button_4").css("opacity", "0.25");
+function bg4Description() {
+  $("#bg_button_4").css("opacity", "1");
+  $("#bg_button_1, #bg_button_2, #bg_button_3").css("opacity", "0.25");
   $("#main-music-title, #main-artist, #main-description").fadeIn();
   $("#main-music-title").text("Lost Way");
   $("#main-artist").text("ChocoTabe");
@@ -121,21 +139,6 @@ function bg3Description() {
 BPM 128로, 몽환적인 분위기를 가진 음악치고는 템포가 느리지 않다. `
   );
   $("#play-now-button").attr("href", "play/LostWay.html");
-}
-
-function bg4Description() {
-  $("#bg_button_4").css("opacity", "1");
-  $("#bg_button_1, #bg_button_2, #bg_button_3").css("opacity", "0.25");
-  $("#main-music-title, #main-artist, #main-description").fadeIn();
-  $("#main-music-title").text("For You");
-  $("#main-artist").text("ChocoTabe");
-  $("#main-description").text(
-    `  ChocoTabe의 43번째 자작곡. 'For You'는 '너'에게 닿기를 바라는 마음을 간절히
-표현한 음악이다. Electronic 장르에 BPM 130으로, 일반적인 템포이다. 이전 자작곡인
-Like a Star에서 사용된 강렬한 전자기타 음이 들리는 것이
-특징이다.`
-  );
-  $("#play-now-button").attr("href", "play/ForYou.html");
 }
 
 function bg1ToBg2() {
