@@ -2,5 +2,5 @@ $(() => {
   setTimeout(() => {
     loadNav();
     loadFooter();
-  }, 50);
+  }, 75);
 });
