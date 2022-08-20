@@ -1,7 +1,7 @@
 $(function () {
   setTimeout(function () {
     category1($("div#music-name").text());
-  }, 70);
+  }, 90);
 });
 
 function category1(_musicName) {
