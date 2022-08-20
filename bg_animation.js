@@ -92,7 +92,7 @@ function bg1Description() {
   Pulse 파형의 멜로디가 도트 게임 브금을 생각하게 만드는 것이 특징이다.
   `
   );
-  $("#play-now-button").attr("href", "play/Walk!.html");
+  $("#play-now-button").attr("href", "play/Walk!");
 }
 
 function bg2Description() {
@@ -109,7 +109,7 @@ function bg2Description() {
   음악도 만들고 싶다는 생각에 Deeper가 만들어졌다.
   `
   );
-  $("#play-now-button").attr("href", "play/Deeper.html");
+  $("#play-now-button").attr("href", "play/Deeper");
 }
 
 function bg3Description() {
@@ -124,7 +124,7 @@ function bg3Description() {
     Electronic 장르에 BPM 118로, 일반적인 템포이다. 
     이 곡은 Lost Way 이후로 7개월이 지나고 나서야 만든 것으로 자작곡 발전에 있어서 의미가 있다. `
   );
-  $("#play-now-button").attr("href", "play/HeartFluttering.html");
+  $("#play-now-button").attr("href", "play/HeartFluttering");
 }
 
 function bg4Description() {
@@ -138,7 +138,7 @@ function bg4Description() {
 잃어버린 길의 여정을 그린 것으로 몽환적인 분위기의 음악이다. Electronic 장르에
 BPM 128로, 몽환적인 분위기를 가진 음악치고는 템포가 느리지 않다. `
   );
-  $("#play-now-button").attr("href", "play/LostWay.html");
+  $("#play-now-button").attr("href", "play/LostWay");
 }
 
 function bg1ToBg2() {
