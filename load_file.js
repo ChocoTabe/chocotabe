@@ -38,10 +38,7 @@ $(function () {
             return 1 - 2;
           });
           for (var i = 0; i < imgCount - (imgCount - 12); i++) {
-            linkObj += `<a    href  = "play/${musicName[i].replace(
-              / /g,
-              ""
-            )}.html">
+            linkObj += `<a    href  = "play/${musicName[i].replace(/ /g, "")}">
             <div class = "music-object">
             <img class = "music-thumbnail" src = "./thumbnail/${artist[i]} - ${
               musicName[i]
@@ -82,7 +79,7 @@ $(function () {
                 linkObj += `<a    href  = "play/${musicName[i].replace(
                   / /g,
                   ""
-                )}.html">
+                )}">
               <div class = "music-object">
               <img class = "music-thumbnail" src = "./thumbnail/${
                 artist[i]
@@ -131,7 +128,7 @@ $(function () {
                         <a    href  = "detail/${musicName[i].replace(
                           / /g,
                           ""
-                        )}.html">
+                        )}">
                         <div class = "detail-object">
                         <img class = "detail-thumbnail" src = "./thumbnail/${
                           artist[i]
@@ -172,7 +169,7 @@ $(function () {
                         <a    href  = "detail/${musicName[i].replace(
                           / /g,
                           ""
-                        )}.html">
+                        )}">
                         <div class = "detail-object">
                         <img class = "detail-thumbnail" src = "./thumbnail/${
                           artist[i]
