@@ -47,8 +47,8 @@ $(function () {
             $("#music-date-play").text(artist[i].slice(4, 15));
             document.querySelector("audio").load();
             if (trimedMusicName[i + 1] != undefined) {
-              $("#next").attr("href", `${trimedMusicName[i + 1]}.html`);
-              $("#next-music").attr("href", `${trimedMusicName[i + 1]}.html`);
+              $("#next").attr("href", `${trimedMusicName[i + 1]}`);
+              $("#next-music").attr("href", `${trimedMusicName[i + 1]}`);
               $("#next-music").text(
                 `${artist[i + 1].slice(15)} - ${musicName[i + 1]}`
               );
@@ -57,8 +57,8 @@ $(function () {
               $("#next-music").remove();
             }
             if (trimedMusicName[i - 1] != undefined) {
-              $("#pre").attr("href", `${trimedMusicName[i - 1]}.html`);
-              $("#pre-music").attr("href", `${trimedMusicName[i - 1]}.html`);
+              $("#pre").attr("href", `${trimedMusicName[i - 1]}`);
+              $("#pre-music").attr("href", `${trimedMusicName[i - 1]}`);
               $("#pre-music").text(
                 `${artist[i - 1].slice(15)} - ${musicName[i - 1]}`
               );
