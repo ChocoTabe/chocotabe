@@ -37,8 +37,8 @@ $(function () {
           musicName.sort(function () {
             return 1 - 2;
           });
-          for (var i = 0; i < imgCount - (imgCount - 12); i++) {
-            linkObj += `<a    href  = "play/${musicName[i].replace(/ /g, "")}">
+          for (var i = 0; i < imgCount - (imgCount - loadImgCount); i++) {
+            linkObj += `<a href = "play/${musicName[i].replace(/ /g, "")}">
             <div class = "music-object">
             <img class = "music-thumbnail" src = "./thumbnail/${artist[i]} - ${
               musicName[i]
@@ -67,19 +67,18 @@ $(function () {
             // $("#scrollY").text(window.scrollY);
             // $("#height").text(gridHeight);
             // $("#dif").text(gridHeight - scrollY);
-            if (gridHeight - scrollY < 640) {
-              if (loadImgCount >= imgCount) loadImgCount = imgCount;
-              else loadImgCount += 12;
+            if (gridHeight - scrollY < 640 && loadImgCount < imgCount) {
+              if (loadImgCount >= imgCount) {
+                loadImgCount = imgCount;
+              } else {
+                loadImgCount += 12;
+              }
               for (
-                var i = loadImgCount - 12;
+                var i = loadImgCount - 12; // i = 12 -> 24 -> 36 -> 48
                 i < imgCount - (imgCount - loadImgCount);
                 i++
               ) {
-                if (loadImgCount == imgCount) continue;
-                linkObj += `<a    href  = "play/${musicName[i].replace(
-                  / /g,
-                  ""
-                )}">
+                linkObj += `<a href ="play/${musicName[i].replace(/ /g, "")}">
               <div class = "music-object">
               <img class = "music-thumbnail" src = "./thumbnail/${
                 artist[i]
@@ -123,12 +122,8 @@ $(function () {
           musicName.sort(function () {
             return 1 - 2;
           });
-          for (var i = 0; i < imgCount; i++) {
-            linkObj += `
-                        <a    href  = "detail/${musicName[i].replace(
-                          / /g,
-                          ""
-                        )}">
+          for (var i = 0; i < imgCount - (imgCount - loadImgCount); i++) {
+            linkObj += `<a href  = "detail/${musicName[i].replace(/ /g, "")}">
                         <div class = "detail-object">
                         <img class = "detail-thumbnail" src = "./thumbnail/${
                           artist[i]
@@ -153,23 +148,23 @@ $(function () {
           reloadDetailGrid();
           $(window).scroll(function () {
             var scrollY = window.scrollY;
-            var gridHeight = $("#music-grid").height();
+            var gridHeight = $("#detail-grid").height();
             // $("#scrollY").text(window.scrollY);
             // $("#height").text(gridHeight);
             // $("#dif").text(gridHeight - scrollY);
-            if (gridHeight - scrollY < 640) {
-              if (loadImgCount >= imgCount) loadImgCount = imgCount;
-              else loadImgCount += 12;
+            if (gridHeight - scrollY < 640 && loadImgCount < imgCount) {
+              if (loadImgCount >= imgCount) {
+                loadImgCount = imgCount;
+              } else {
+                loadImgCount += 12;
+              }
               for (
                 var i = loadImgCount - 12;
-                i < imgCount - (imgCount - loadImgCount);
+                i < imgCount - (imgCount - loadImgCount); // imgCount - (imgCount - loadImgCount)
                 i++
               ) {
                 linkObj += `
-                        <a    href  = "detail/${musicName[i].replace(
-                          / /g,
-                          ""
-                        )}">
+                        <a href  = "detail/${musicName[i].replace(/ /g, "")}">
                         <div class = "detail-object">
                         <img class = "detail-thumbnail" src = "./thumbnail/${
                           artist[i]
