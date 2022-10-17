@@ -73,9 +73,13 @@ $(function () {
               } else {
                 loadImgCount += 12;
               }
+              var i = loadImgCount - 12; // i = 12 -> 24 -> 36 -> 48
+              if (loadImgCount > imgCount) {
+                loadImgCount = imgCount;
+              }
               for (
-                var i = loadImgCount - 12; // i = 12 -> 24 -> 36 -> 48
-                i < imgCount - (imgCount - loadImgCount);
+                ;
+                i < imgCount - (imgCount - loadImgCount); // 48 < 49 - 11
                 i++
               ) {
                 linkObj += `<a href ="play/${musicName[i].replace(/ /g, "")}">
@@ -158,8 +162,12 @@ $(function () {
               } else {
                 loadImgCount += 12;
               }
+              var i = loadImgCount - 12; // i = 12 -> 24 -> 36 -> 48
+              if (loadImgCount > imgCount) {
+                loadImgCount = imgCount;
+              }
               for (
-                var i = loadImgCount - 12;
+                ;
                 i < imgCount - (imgCount - loadImgCount); // imgCount - (imgCount - loadImgCount)
                 i++
               ) {
