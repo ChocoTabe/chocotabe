@@ -83,6 +83,20 @@ function bg1Description() {
   $("#bg_button_1").css("opacity", "1");
   $("#bg_button_2, #bg_button_3, #bg_button_4").css("opacity", "0.25");
   $("#main-music-title, #main-artist, #main-description").fadeIn();
+  $("#main-music-title").text("Frontier");
+  $("#main-artist").text("ChocoTabe");
+  $("#main-description").text(
+    `  ChocoTabe의 49번째 자작곡. 'Frontier'는 미지의 지역을 개척하기 위해 모험을
+  떠나는 모습을 표현한 음악이다. Electornic 장르에 BPM 98로 느린 템포이다. 뒤에
+  넓게 깔리는 베이스가 웅장함을 주고 kick과 Snare로 긴장감을 주는 것이 특징이다.`
+  );
+  $("#play-now-button").attr("href", "play/Frontier");
+}
+
+function bg2Description() {
+  $("#bg_button_2").css("opacity", "1");
+  $("#bg_button_1, #bg_button_3, #bg_button_4").css("opacity", "0.25");
+  $("#main-music-title, #main-artist, #main-description").fadeIn();
   $("#main-music-title").text("Sky");
   $("#main-artist").text("ChocoTabe");
   $("#main-description").text(
@@ -93,49 +107,32 @@ function bg1Description() {
   $("#play-now-button").attr("href", "play/Sky");
 }
 
-function bg2Description() {
-  $("#bg_button_2").css("opacity", "1");
-  $("#bg_button_1, #bg_button_3, #bg_button_4").css("opacity", "0.25");
-  $("#main-music-title, #main-artist, #main-description").fadeIn();
-  $("#main-music-title").text("Walk!");
-  $("#main-artist").text("ChocoTabe");
-  $("#main-description").text(
-    `
-    ChocoTabe의 47번째 자작곡. 'Walk!'는 밝은 마음으로 앞으로 나아가고자 하는
-  마음을 표현한 음악이다. Electornic 장르에 BPM 120으로, 일반적인 템포이다.
-  Pulse 파형의 멜로디가 도트 게임 브금을 생각하게 만드는 것이 특징이다.
-  `
-  );
-  $("#play-now-button").attr("href", "play/Walk!");
-}
-
 function bg3Description() {
   $("#bg_button_3").css("opacity", "1");
   $("#bg_button_1, #bg_button_2, #bg_button_4").css("opacity", "0.25");
   $("#main-music-title, #main-artist, #main-description").fadeIn();
-  $("#main-music-title").text("Deeper");
+  $("#main-music-title").text("Walk!");
   $("#main-artist").text("ChocoTabe");
-  $("#main-description").text(
-    `ChocoTabe의 46번째 자작곡. 'Deeper'는 어둡고 깊은 곳에서 받는 
-    호기심으로 더 깊은 곳으로 들어가는 모습을 표현한 음악이다. Electronic
-  장르에 BPM 124로, 일반적인 템포이다. Heart Fluttering을 만들고 나서 빨리 다른
-  음악도 만들고 싶다는 생각에 Deeper가 만들어졌다.`
-  );
-  $("#play-now-button").attr("href", "play/Deeper");
+  $("#main-description").text(`
+    ChocoTabe의 47번째 자작곡. 'Walk!'는 밝은 마음으로 앞으로 나아가고자 하는
+  마음을 표현한 음악이다. Electornic 장르에 BPM 120으로, 일반적인 템포이다.
+  Pulse 파형의 멜로디가 도트 게임 브금을 생각하게 만드는 것이 특징이다.
+  `);
+  $("#play-now-button").attr("href", "play/Walk!");
 }
 
 function bg4Description() {
   $("#bg_button_4").css("opacity", "1");
   $("#bg_button_1, #bg_button_2, #bg_button_3").css("opacity", "0.25");
   $("#main-music-title, #main-artist, #main-description").fadeIn();
-  $("#main-music-title").text("Heart Fluttering");
+  $("#main-music-title").text("Deeper");
   $("#main-artist").text("ChocoTabe");
   $("#main-description")
-    .text(`ChocoTabe의 45번째 자작곡. 2022년에 만들어진 첫 곡이다. 
-    'Heart Fluttering'은 다시 시작하면서 걱정되는 마음도 있지만 설레이는 마음을 표현한 음악이다. 
-    Electronic 장르에 BPM 118로, 일반적인 템포이다. 
-    이 곡은 Lost Way 이후로 7개월이 지나고 나서야 만든 것으로 자작곡 발전에 있어서 의미가 있다.`);
-  $("#play-now-button").attr("href", "play/HeartFluttering");
+    .text(`ChocoTabe의 46번째 자작곡. 'Deeper'는 어둡고 깊은 곳에서 받는 
+    호기심으로 더 깊은 곳으로 들어가는 모습을 표현한 음악이다. Electronic
+  장르에 BPM 124로, 일반적인 템포이다. Heart Fluttering을 만들고 나서 빨리 다른
+  음악도 만들고 싶다는 생각에 Deeper가 만들어졌다.`);
+  $("#play-now-button").attr("href", "play/Deeper");
 }
 
 function bg1ToBg2() {
